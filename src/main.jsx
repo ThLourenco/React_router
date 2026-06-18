@@ -24,11 +24,12 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
-      { //rota dinamica
+      { //rota dinamica, product parti fixa do url e o :id parametro dinamico da rota
         path:"products/:id",
+        //"Quando a URL for /products/alguma-coisa, guarde essa alguma-coisa numa variável chamada id."
         element:<Products/>
       },
-      {
+      { //path define a rota em que o url ira atender
         path:"products/:id/info",
         element:<Info/>
       }, 
